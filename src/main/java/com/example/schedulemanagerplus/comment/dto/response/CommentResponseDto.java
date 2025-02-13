@@ -1,13 +1,13 @@
 package com.example.schedulemanagerplus.comment.dto.response;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 @Getter
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class CommentResponseDto {
-    private Long id;
-    private String memberName;
-    private String content;
+    private final Long id;
+    private final String memberName;
+    private final String content;
 
 }

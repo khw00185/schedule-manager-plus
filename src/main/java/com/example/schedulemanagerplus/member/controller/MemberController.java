@@ -49,4 +49,3 @@ public class MemberController {
         return ResponseEntity.ok(memberService.deleteAccount(request));
     }
 }
-//자자  이제 로그아웃 문제 다듬고, 유저정보 변경, 회원 탈퇴, 스케줄 단건 조회 해보면 됨. ㅎㅎ

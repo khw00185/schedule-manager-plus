@@ -1,12 +1,12 @@
 package com.example.schedulemanagerplus.schedule.dto.response;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
 @Getter
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class AllSchedulesResponseDto {
     private final List<ScheduleResponseDto> schedules;
     private final int totalCount;

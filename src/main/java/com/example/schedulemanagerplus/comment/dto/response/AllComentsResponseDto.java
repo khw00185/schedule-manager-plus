@@ -1,11 +1,11 @@
 package com.example.schedulemanagerplus.comment.dto.response;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 @Getter
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class AllComentsResponseDto {
     private final List<CommentResponseDto> comments;
     private final int totalCount;

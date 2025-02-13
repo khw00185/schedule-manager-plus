@@ -11,13 +11,13 @@ import lombok.Getter;
 public class SignupRequestDto {
     @NotBlank(message = "이메일은 필수 입력값입니다.")
     @Email(message = "유효한 이메일 형식이 아닙니다.")
-    private final String email;
+    private String email;
 
     @NotBlank(message = "이름은 필수 입력값입니다.")
-    private final String name;
+    private String name;
 
     @NotBlank
     @Size(min = 8, message = "비밀번호는 8자 이상으로 설정해주세요.")
-    private final String password;
+    private String password;
 
 }

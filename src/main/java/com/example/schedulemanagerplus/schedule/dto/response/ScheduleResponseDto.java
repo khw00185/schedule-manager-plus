@@ -1,10 +1,10 @@
 package com.example.schedulemanagerplus.schedule.dto.response;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 @Getter
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class ScheduleResponseDto {
     private final Long id;
 

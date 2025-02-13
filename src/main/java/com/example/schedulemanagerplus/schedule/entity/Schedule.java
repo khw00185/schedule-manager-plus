@@ -5,9 +5,11 @@ import com.example.schedulemanagerplus.member.entity.Member;
 import com.example.schedulemanagerplus.schedule.dto.request.ScheduleRequestDto;
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
 @Entity
+@NoArgsConstructor
 @Table(name = "schedule")
 public class Schedule extends TimeStamp {
     @Id
@@ -20,12 +22,10 @@ public class Schedule extends TimeStamp {
     @Column(nullable = false, columnDefinition = "longtext")
     private String content;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id", nullable = false)
     private Member member;
 
-
-    public Schedule() {}
 
     public Schedule(ScheduleRequestDto request, Member member) {
         this.title = request.getTitle();
