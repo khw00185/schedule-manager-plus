@@ -22,8 +22,8 @@ public enum CommonErrorCode implements BaseErrorCode {
     CommentNotFound(HttpStatus.NOT_FOUND, "COMMENT_002", "해당 댓글이 존재하지 않습니다."),
 
     //user관련
-    InvalidUserId(HttpStatus.BAD_REQUEST, "USER_001", "ID가 일치하지 않습니다."),
-    InvalidPassword(HttpStatus.BAD_REQUEST, "USER_002", "비밀번호가 일치하지 않습니다."),
+    InvalidUserId(HttpStatus.UNAUTHORIZED, "USER_001", "ID가 일치하지 않습니다."),
+    InvalidPassword(HttpStatus.UNAUTHORIZED, "USER_002", "비밀번호가 일치하지 않습니다."),
     DuplicatedId(HttpStatus.CONFLICT, "USER_003", "이미 존재하는 Email입니다."),
     UserNotFound(HttpStatus.NOT_FOUND, "USER_004", "존재하지 않는 유저입니다."),
 
